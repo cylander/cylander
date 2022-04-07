@@ -8,3 +8,6 @@ def mxdiflg(a1, a2):
         ret = str(abs(x - y)
     
     return ret
+
+
+#link: https://www.codewars.com/kata/5663f5305102699bad000056
