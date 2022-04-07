@@ -1,10 +1,7 @@
 
-class Ball(object):
+class Ball():
     
-    ball_type = 'regular'
-    
-    def __init__:
-        if object and object == 'super':
-            self.ball_type = 'super'
-
+    def __init__(self, object = 'regular'):
+            self.ball_type = object
+            
 #link : https://www.codewars.com/kata/53f0f358b9cb376eca001079
