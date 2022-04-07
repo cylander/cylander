@@ -4,17 +4,27 @@ class Cipher(object):
     reverse_mapper = {}
     
     def __init__(self, map1, map2):
-        for i in range(0, len(map1))
+        for i in range(0, len(map1)):
             self.mapper[map1[i]] = map2[i]
-            self.reverse_mapper[map2[i]] = map1[i]    
+            print(self.mapper[map1[i]])
+            self.reverse_mapper[map2[i]] = map1[i] 
+            
     def encode(self, s):
-        if s in map1:
-            s = self.mapper[s]
-        return s
+        ret = ''
+        for c in s:
+            if c in self.mapper.keys():
+                c = self.mapper[c]
+            ret += c
+            
+        return ret
     
     def decode(self, s):
-        if s in map2:
-            s = self.reverse_mapper[s]
-        return s
+        ret = ''
+        for c in s:
+            if c in self.reverse_mapper.keys():
+                c = self.reverse_mapper[c]
+            ret += c
+            
+        return ret
 
 #link: https://www.codewars.com/kata/52eb114b2d55f0e69800078d/train/python
