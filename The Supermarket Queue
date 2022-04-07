@@ -24,5 +24,7 @@ def supermarket_queue(customers, n):
     return total_time
 
 #armà sta risposta sta su stakoverflow poiche secondo me è un po tosto
-come algritmo,secondo me è un po tosto :I
+come algritmo :I 
+
+link: https://www.codewars.com/kata/57b06f90e298a7b53d000a86
 
