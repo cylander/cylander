@@ -1,0 +1,19 @@
+class Cipher(object):
+    
+    mapper = {}
+    reverse_mapper = {}
+    
+    def __init__(self, map1, map2):
+        for i in range(0, len(map1))
+            self.mapper[map1[i]] = map2[i]
+            self.reverse_mapper[map2[i]] = map1[i]    
+    def encode(self, s):
+        if s in map1:
+            s = self.mapper[s]
+        return s
+    
+    def decode(self, s):
+        if s in map2:
+            s = self.reverse_mapper[s]
+        return s
+

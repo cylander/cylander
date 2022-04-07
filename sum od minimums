@@ -1,0 +1,12 @@
+def sum_of_minimums(numbers):
+
+    minimums = []
+    sum = 0
+    
+    for m in numbers:
+        minimums.append(min(numbers))
+            
+    for min in minimums:
+        sum += min
+        
+    return sum

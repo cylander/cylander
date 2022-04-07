@@ -1,0 +1,10 @@
+def mxdiflg(a1, a2):
+    if len(a1) == 0 and len(a2) == 0:
+        ret = '-1'
+        
+    else:
+        x = max(a1, key=len)
+        y = max(a2, key=len)
+        ret = str(abs(x - y)
+    
+    return ret

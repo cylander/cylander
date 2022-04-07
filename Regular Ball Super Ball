@@ -1,0 +1,9 @@
+
+class Ball(object):
+    
+    ball_type = 'regular'
+    
+    def __init__:
+        if object and object == 'super':
+            self.ball_type = 'super'
+

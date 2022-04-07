@@ -1,0 +1,28 @@
+from collections import deque
+
+def supermarket_queue(customers, n):
+    queue = deque(customers)
+    total_time = 0
+    workers =[0 for _ in range(n)]
+    while True:
+        for i in range(n): # loop over self-checkouts
+            if workers[i] == 0: # check for free self-checkout
+                if queue:
+                    workers[i] = queue.popleft()
+            if workers[i] > 0: # checkout has work to do
+                # reduce amount of work
+                workers[i] -= 1
+        # for live updates (i.e. debugging)
+        print(f"t: {total_time}, checkouts: {workers}")
+        # check for customers or busy self-checkouts
+        if queue or any([w > 0 for w in workers]):
+            # add one timestep
+            total_time += 1
+        else:
+            # no customers waiting, no checkouts busy
+            break
+    return total_time
+
+#armà sta risposta sta su stakoverflow poiche secondo me è un po tosto
+come algritmo,secondo me è un po tosto :I
+
